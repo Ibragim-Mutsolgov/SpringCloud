@@ -15,5 +15,10 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: 'true'
     hibernate:
-      ddl_auto: update
+      ddl_auto: create-drop
     show_sql: 'true'
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9597/eureka
