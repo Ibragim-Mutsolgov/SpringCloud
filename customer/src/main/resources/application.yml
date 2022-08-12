@@ -1,0 +1,19 @@
+server:
+  port:
+    9595
+
+spring:
+  application:
+    name: customer
+  datasource:
+    username: 'rootuser'
+    url: jdbc:postgresql://localhost:5432/customer
+    password: 'rootpass'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl_auto: update
+    show_sql: 'true'
